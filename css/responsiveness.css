@@ -1,0 +1,29 @@
+/* Small screens: reduce padding and center text */
+@media (max-width: 767.98px) {
+    .about-me .right-column {
+      padding: 16px 20px;
+      text-align: center;
+    }
+    .about-me .left-column {
+      padding: 10px 10px;
+    }
+    .about-me .buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Medium and up: keep comfortable padding and left align */
+  @media (min-width: 768px) {
+    .about-me .right-column {
+      padding: 20px 40px;
+      text-align: left;
+    }
+  }
+  
+  /* Optional: limit paragraph width for readability on large screens */
+  @media (min-width: 992px) {
+    .about-me .pargraph-about-me p {
+      max-width: 60ch;
+    }
+  }
